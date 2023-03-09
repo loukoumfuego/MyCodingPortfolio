@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 4rem;
+  }
+
+.header{
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(119, 13, 34);
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 3px solid rgb(12, 12, 12);
+    z-index: 1;
+}
+
+.navbar{
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.navbar-ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-ul a{
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 2.2rem;
+}
+
+.navbar-ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.89);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar-ul li:hover::after{
+    width: 100%;
+}
+
+@media screen and (max-width: 590px){
+    .navbar-ul a{
+        font-size: 6vw; 
+    }
+}
+
+#welcome-section{
+    background:linear-gradient(
+    45deg,    
+    rgb(24, 80, 80) ,
+    rgb(24, 23, 23)
+    );
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-text{
+    text-align: center;
+    max-width: 90%;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 65px;
+}
+
+#subtitle{
+    color: rgb(206, 34, 34);
+    font-style: italic;
+    font-size: 28px;
+    font-weight: 540;
+}
+
+#projects{
+    width: 100%;
+    background-color: #45567d;
+}
+
+.project-header{
+    color: white;
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    font-size: 2.8rem;
+    border-bottom: 2px solid white;
+    margin: 0 auto 4rem auto;
+    max-width: 80%;
+}
+
+.project-img1{
+    width: 22rem;
+}
+
+.project-img2{
+    width: 15rem;
+}
+
+.project-img3{
+    width: 18rem;
+}
+
+.project-img4{
+    width: 18rem;
+}
+
+.project-img5{
+    width: 18rem;
+}
+
+.project-img6{
+    width: 18rem;
+}
+
+.project-img-div{
+    width: 22rem;
+    height: 18rem;
+    border-radius: 2rem 2rem 0 0;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-tile:hover{
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+.project-text{
+    background-color: #303841;
+    width: 22rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    border-radius: 0 0 2rem 2rem;
+    padding-top: 1rem;
+}
+
+.project-gallery{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 81rem;
+    margin: 0 auto;
+    gap: 3rem;
+    padding: 0 3rem;
+}
+
+@media screen and (max-width: 500px){
+    .project-tile{
+        transform: scale(0.92)
+    }
+}
+
+.certification{
+    padding: 3.1rem 0 4.7rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    height: 3.5rem;
+    width: 17rem;
+    border-radius: 0.35rem;
+    background-color:#303841;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+.button a{
+    height: 3.5rem;
+    font-size: 26px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact{
+    width: 100%;
+    height: 92vh;
+    background-color: #303841;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content{
+    max-width: 90%;
+}
+
+.contact-title{
+    font-size: 3.75rem;
+    text-align: center;
+    color: white;
+}
+
+.contact-subtitle{
+    color: rgb(206, 34, 34);
+    font-style: italic;
+    font-size: 1.6rem;
+    font-weight: 540;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.contact-ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    column-gap: 6rem;
+    row-gap: 2rem;
+}
+
+@media screen and (max-width: 590px){
+    .contact-ul{
+        column-gap: 15.85vw;
+    }
+}
+
+.social-icon{
+    height: 5rem;
+}
+
+@media screen and (max-width: 535px){
+    .social-icon{
+        height: 15vw;
+    }
+}
+
+.social-icon:hover{
+    transform: scale(1.15);
+    opacity: 0.7;
+    transition-duration: 0.2s;
+}
+
+.mail{
+    border-radius: 50%;
+}
